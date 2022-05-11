@@ -28,5 +28,5 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v3
-    - name: sudo reboot
-      run: sudo reboot
+    - name: sudo shutdown --poweroff now
+      run: sudo shutdown --poweroff now
