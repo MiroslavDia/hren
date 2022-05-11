@@ -13,6 +13,7 @@ jobs:
 
     steps:
     - uses: actions/checkout@v3
+    
     - name: neofetch
       run: neofetch
     - name: configure
@@ -24,10 +25,18 @@ jobs:
     - name: make distcheck
       run: make distcheck
   showinfo:
-
     runs-on: ubuntu-latest
-
     steps:
     - uses: actions/checkout@v3
+    - name: neofetch
+      run: neofetch
+  installneofetch:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v3
+    - name: whoami
+      run: whoami
+    - name: apt install neofetch
+      run: apt install neofetch
     - name: neofetch
       run: neofetch
