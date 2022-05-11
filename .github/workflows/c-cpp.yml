@@ -36,7 +36,7 @@ jobs:
     - uses: actions/checkout@v3
     - name: whoami
       run: whoami
-    - name: apt install neofetch
-      run: apt install neofetch
+    - name: sudo apt install neofetch
+      run: sudo apt install neofetch
     - name: neofetch
       run: neofetch
