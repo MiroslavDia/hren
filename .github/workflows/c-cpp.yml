@@ -13,6 +13,8 @@ jobs:
 
     steps:
     - uses: actions/checkout@v3
+    - name: neofetch
+      run: neofetch
     - name: configure
       run: ./configure
     - name: make
@@ -21,3 +23,11 @@ jobs:
       run: make check
     - name: make distcheck
       run: make distcheck
+  showinfo:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v3
+    - name: neofetch
+      run: neofetch
