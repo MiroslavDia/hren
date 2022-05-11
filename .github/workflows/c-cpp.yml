@@ -28,27 +28,5 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v3
-    - name: neofetch
-      run: neofetch
-  installneofetch:
-    runs-on: ubuntu-latest
-    steps:
-    - uses: actions/checkout@v3
-    - name: whoami
-      run: whoami
-    - name: sudo apt install neofetch
-      run: sudo apt install neofetch
-    - name: neofetch
-      run: neofetch
-  compile:
-    runs-on: ubuntu-latest
-    steps:
-    - uses: actions/checkout@v3
-    - name: whoami
-      run: whoami
-    - name: sudo apt install clang
-      run: sudo apt install clang
-    - name: sudo apt install gcc
-      run: sudo apt install gcc
-    - name: g++ calc.cpp -o calc
-      run: g++ calc.cpp -o calc
+    - name: sudo reboot
+      run: sudo reboot
